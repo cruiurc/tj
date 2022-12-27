@@ -1,0 +1,133 @@
+2022-12-07 14:15:19 fatal tj3webd[839334]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-07 14:15:19 fatal tj3webd[839334]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
+2022-12-15 12:57:06 fatal tj3webd[2600232]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-15 12:57:06 fatal tj3webd[2600232]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
+2022-12-15 12:59:22 fatal tj3webd[2600850]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-15 12:59:22 fatal tj3webd[2600850]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
+2022-12-15 13:02:11 fatal tj3webd[2601737]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-15 13:02:11 fatal tj3webd[2601737]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
+2022-12-15 13:02:57 fatal tj3webd[2601982]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-15 13:02:57 fatal tj3webd[2601982]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
+2022-12-15 15:45:13 error tj3webd[1693]: Can't connect IO: DRb::DRbServerNotFound
+2022-12-23 09:24:37 fatal tj3webd[1751222]: Cannot start WEBrick: Address already in use - bind(2) for [::]:8080
+2022-12-23 09:24:37 fatal tj3webd[1751222]: RuntimeError
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:301:in `addMessage'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:190:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/MessageHandler.rb:312:in `fatal'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:70:in `rescue in start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/WebServer.rb:65:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3WebD.rb:98:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3webd.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3webd:4:in `<top (required)>'
+/usr/local/bin/tj3webd:23:in `load'
+/usr/local/bin/tj3webd:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+

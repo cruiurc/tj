@@ -1,0 +1,83 @@
+# FreeMind map "耳标"
+
+task t1 "选定供应商" {
+
+    task t11 "供应商寻源" {
+        start 2022-12-16
+        length 3d
+    }
+
+    task t12 "确定代工方案" {
+        depends !t11
+        duration 1d
+    }
+
+    task t13 "招标" {
+        depends !t12
+        duration 4d
+    }
+
+    task t14 "签订合同" {
+        duration 5d
+        depends !t13
+    }
+}
+
+task t2 "Inlay生产" {
+
+    task t21 "生产晶圆" {
+        duration 7d
+        depends !!t1.t14
+    }
+
+    task t22 "蚀刻模具" {
+        duration 3d
+        depends !!t1.t14
+    }
+
+    task t23 "蚀刻天线" {
+        duration 7d
+        depends !t22
+    }
+
+    task t24 "模切刀具" {
+        duration 5d
+        depends !!t1.t14
+    }
+
+    task t25 "倒封装" {
+        depends !t24
+        duration 5d
+    }
+}
+
+task t3 "复合封装&注塑" {
+
+    task t31 "模具开模" {
+        depends !!t1.t14
+        duration 5d
+    }
+
+    task t32 "完成母头&端盖" {
+        depends !t31
+        duration 5d
+    }
+
+    task t33 "完成耳标公标" {
+        depends !t32
+        duration 5d
+    }
+}
+
+task t4 "二次加工&赋码" {
+
+    task t41 "准备流水线" {
+        depends !!t1.t14
+        duration 3d
+    }
+
+    task t42 "验证&包装&入库" {
+        depends !t41, !!t3
+        duration 7d
+    }
+}

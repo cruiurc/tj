@@ -1,0 +1,272 @@
+# FreeMind map "NEW"
+
+task feeder "智能饲喂器产品开发" {
+
+    task demo1Design "样机设计&加工" {
+
+        task totalDesign "整体设计" {
+
+            task sysDesign "系统方案" {
+                duration 10d
+                start 2022-11-01
+            }
+
+            task doc "结构图&原理图&网络图&业务流程设计" {
+                duration 10d
+                start 2022-11-01
+            }
+
+            task tech "产品技术参数确定" {
+                duration 10d
+                start 2022-11-01
+            }
+        }
+
+        task mechanical "机械&结构设计" {
+
+            task confirm "机械方案优化设计&确认" {
+                duration 6d
+                start 2022-11-20
+            }
+
+            task purchase "样品加工采购&工业设计" {
+                duration 10d
+                depends !confirm
+            }
+
+            task production "机械图纸外发加工&工业设计样机生产" {
+                duration 7d
+                depends !purchase
+            }
+        }
+
+        task embedHW "嵌入式硬件设计" {
+
+            task pcb "硬件方案设计&原理设计&PCB设计" {
+                duration 10d
+                start 2022-11-20
+            }
+
+            task bom "BOM清单编制&图纸&硬件打样制作" {
+                duration 7d
+                depends !pcb
+            }
+
+            task test "硬件测试&用例编制" {
+                duration 10d
+                depends !bom
+            }
+        }
+
+        task embedSW "嵌入式软件开发" {
+
+            task soft "软件方案设计&系统架构设计" {
+                duration 17d
+                start 2022-11-20
+            }
+
+            task modify "软件开发&优化&测试" {
+                duration 12d
+                depends !soft
+            }
+
+            task test "用例编制&功能测试&软件交付" {
+                duration 20d
+                depends !modify
+            }
+        }
+
+        task PDA "PDA" {
+
+            task contex "业务场景分析&软件方案设计" {
+                duration 25d
+                start 2022-11-21
+            }
+
+            task develop "软件开发" {
+                duration 45d
+                depends !contex
+            }
+
+            task test "用例编制&功能测试&设备交付" {
+                duration 70d
+                depends !develop
+            }
+        }
+
+        task server "边缘服务器" {
+
+            task contex "业务场景分析&软件方案设计" {
+                duration 25d
+                start 2022-11-21
+            }
+
+            task develop "软件开发" {
+                duration 45d
+                depends !contex
+            }
+
+            task test "用例编制&功能测试&设备交付" {
+                duration 70d
+                depends !develop
+            }
+        }
+
+        task demoInstall "样机组装" {
+
+            task install "机械结构组装" {
+                duration 21d
+                start 2022-12-01
+            }
+
+            task eletric "嵌入式硬件组装" {
+                duration 10d
+                depends !install
+            }
+
+            task gateway "网关软硬件测试" {
+                duration 10d
+                depends !install
+            }
+
+            task complete "完整版开发完成" {
+                duration 10d
+                depends !install
+            }
+        }
+    }
+
+    task demo1Modify "样机测试&优化" {
+
+        task demoTest "样机测试" {
+
+            task mechanical "编写机械硬件&软件测试用例" {
+                duration 10d
+                start 2023-01-10
+            }
+
+            task testMechanical "机械功能测试" {
+                duration 10d
+                start 2023-01-10
+            }
+
+            task testEletric "软硬件功能测试" {
+                duration 10d
+                start 2023-01-10
+            }
+
+            task testSign "通讯测试" {
+                duration 10d
+                start 2023-01-10
+            }
+
+            task testComplete "整机测试" {
+                duration 15d
+                start 2023-01-10
+            }
+
+            task collect "测试问题收集" {
+                duration 18d
+                depends !testComplete
+            }
+        }
+
+        task modify "产品问题优化" {
+
+            task modifyMec "机械问题优化" {
+                duration 18d
+                start 2023-01-20
+            }
+
+            task modifyHW "硬件问题优化" {
+                duration 18d
+                start 2023-01-20
+            }
+
+            task modifySW "软件问题优化" {
+                duration 18d
+                start 2023-01-20
+            }
+        }
+    }
+
+    task demo2Install "第2版样机入场安装" {
+
+        task demo10Pic "样机加工组装10套" {
+
+            task production "加工" {
+                duration 10d
+                start 2023-02-08
+            }
+
+            task assemble "组装" {
+                duration 3d
+                start 2023-02-15
+            }
+
+            task install "安装" {
+                duration 7d
+                depends !assemble
+            }
+        }
+
+        task demoV2Test "第2版样机测试" {
+
+            task testFunc "整机功能测试" {
+                duration 10d
+                depends !!demo10Pic
+            }
+
+            task testLogic "精准饲喂逻辑测试" {
+                duration 15d
+                depends !!demo10Pic
+            }
+        }
+
+        task purchase "采购招标" {
+
+            task doc "准备材料" {
+                duration 3d
+                depends !!demoV2Test
+            }
+
+            task source "邀标&招标" {
+                duration 14d
+                depends !doc
+            }
+
+            task result "定标" {
+                duration 5d
+                depends !source
+            }
+        }
+
+        task mold "开模验证" {
+
+            task communicate "技术交底" {
+                duration 3d
+                depends !!purchase
+            }
+
+            task mold "开模" {
+                duration 30d
+                depends !communicate
+            }
+
+            task test "抽样封测" {
+                duration 5d
+                depends !mold
+            }
+
+            task production "首批量产" {
+                duration 15d
+                depends !test
+            }
+
+            task verify "量产产品验证" {
+                duration 10d
+                depends !production
+            }
+        }
+    }
+}

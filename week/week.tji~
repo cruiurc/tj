@@ -1,0 +1,65 @@
+
+    task w52t01 "2023年绩效合约" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t02 "2023年工程预算" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t03 "2023年天邦-史记关联交易披露" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t04 "尚志项目五方会谈&方案确定" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t05 "SAAS、SAP、元宇宙、物联平台数据关系方案" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t06 "龙山、含山技改工程" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t07 "史记股权激励" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t08 "耳标项目审厂谈判" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t09 "拾分味道全员营销" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t10 "关键面试：承宇飞、牟丹琪" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t11 "启真项目：接待孙博士" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t12 "新组织架构" {
+        start 2022-12-26
+        duration 5d
+    }
+
+    task w52t13 "产业金融" {
+        start 2022-12-26
+        duration 5d
+    }

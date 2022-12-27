@@ -1,0 +1,49 @@
+# FreeMind map "三龙场施工安装"
+
+task En "三龙场施工安装项目" {
+
+    task P "物料采购" {
+
+        task P1 "工程物料到货" {
+            start 2022-12-20
+            duration 7d
+        }
+
+        task P2 "传感器外购审批" {
+            start 2022-12-22
+            duration 7d
+        }
+
+        task P3 "外购传感器到货" {
+            start 2022-12-30
+            duration 10d
+            depends !P2
+        }
+
+        task P4 "SGI9200外壳及膜到货" {
+            start 2022-12-01
+            duration 22d
+        }
+
+        task P5 "100套SGI9200组装" {
+            start 2022-12-30
+            duration 1d
+            depends !P4
+        }
+    }
+
+    task E "现场施工" {
+
+        task E1 "工程施工" {
+            start 2022-12-29
+            duration 9d
+            depends !!P.P1
+        }
+
+        task E2 "设备安装及系统调试" {
+            start 2023-01-10
+            duration 7d
+            depends !!P.P5
+        }
+    }
+}

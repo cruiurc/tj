@@ -1,0 +1,174 @@
+# FreeMind map "SGI9300"
+
+task SGI9300 "环空器SGI9300" {
+
+    task software "软件开发" {
+
+        task S1 " web端首页，传感器数据，设备状态，历史数据页面原型设计，页面开发" {
+            duration 29d
+            start 2022-11-01
+        }
+
+        task S2 "web前端-算法设置，告警设置，告警日志，猪舍信息开发联调" {
+            duration 16d
+            start 2022-11-20
+        }
+
+        task S3 "底板实现4路AO输出API封装" {
+            duration 4d
+            start 2022-12-05
+        }
+
+        task S4 "web前端-设备参数管理，设备参数设置，主板继电器测试页面开发" {
+            duration 34d
+            start 2022-11-05
+        }
+
+        task S5 " 不同猪舍类型、不同猪群信息目标温湿度和通风量参数获取" {
+            duration 29d
+            start 2022-12-01
+        }
+
+        task S6 "环境控制逻辑实现" {
+            duration 10d
+            start 2022-12-20
+        }
+
+        task S7 "底板实现modbus协议，完成传感器采集功能" {
+            duration 8d
+            start 2022-12-05
+        }
+
+        task S8 "底板实现4路模拟量采集" {
+            duration 4d
+            start 2022-12-12
+        }
+
+        task S9 "底板实现数字量读取功能" {
+            duration 4d
+            start 2022-12-12
+        }
+
+        task S10 "QT端实现猪舍、猪群信息配置并入库存储" {
+            duration 4d
+            start 2022-12-01
+        }
+
+        task S11 "QT端实现传感器数据显示、目标温湿度数据显示" {
+            duration 4d
+            start 2022-12-01
+        }
+
+        task S12 "QT端实现设备状态显示与设置功能" {
+            duration 29d
+            start 2022-12-01
+        }
+
+        task S13 "QT端实现历史目标温湿度等曲线显示" {
+            duration 29d
+            start 2022-12-01
+	    complete 70
+        }
+
+        task S14 "7寸屏告警设置功能开发需求说明" {
+            duration 4d
+            start 2022-12-05
+        }
+
+        task S15 "QT端实现系统设置功能" {
+            duration 29d
+            start 2022-12-01
+        }
+
+        task S16 "Web前端拓展卡主页设置" {
+            duration 3d
+            start 2022-12-12
+        }
+
+        task S17 "Web前端网关卡开发" {
+            duration 13d
+            start 2022-12-12
+        }
+    }
+
+    task hardware "硬件开发" {
+
+        task H1 "底板PCB完善、制板，准备SGI-9300控制板方案与原理图设计" {
+            duration 2d
+            start 2022-12-07
+        }
+
+        task H2 "底板PCB调整，并与奕虹工业设计公司确认结构对叠" {
+            duration 1d
+            start 2022-12-12
+        }
+
+        task H3 "核心控制板原理图方案设计、核心器件选型" {
+            duration 14d
+            start 2022-12-09
+        }
+
+        task H4 "与奕虹工业设计公司确认核心控制板外形与高度要求" {
+            duration 7d
+            start 2022-12-16
+        }
+
+        task H5 "核心控制板PCB Layout" {
+            duration 15d
+            start 2022-12-26
+        }
+
+        task H6 "核心控制板BOM、Gerber等生产文件导出、打样生产" {
+            duration 20d
+            start 2023-01-11
+        }
+    }
+
+    task teat "系统测试" {
+
+        task T1 "高低温柜等测试实验器具采购" {
+            duration 14d
+            start 2022-12-09
+        }
+
+        task T2 "电阻屏交互功能测试" {
+            duration 2d
+            start 2023-02-01
+        }
+
+        task T3 "环控逻辑测试" {
+            duration 8d
+            start 2022-12-15
+        }
+
+        task T4 "控制板与底板通讯稳定性测试" {
+            duration 8d
+            start 2023-02-01
+        }
+
+        task T5 "底板环境传感器采集功能稳定性测试" {
+            duration 8d
+            start 2023-02-01
+        }
+
+        task T6 "底板模拟量输入与模拟量输出控制稳定性测试" {
+            duration 8d
+            start 2023-02-01
+        }
+
+        task T7 "基于前端原型，进行前端业务交互测试" {
+            duration 6d
+            start 2023-02-01
+        }
+
+        task T8 "控制板与华为IoTDA交互测试" {
+            duration 7d
+            start 2023-02-01
+        }
+
+        task T9 "设备环境可靠性测试（老化、高低温测试）" {
+            duration 9d
+            start 2023-02-01
+        }
+    }
+}

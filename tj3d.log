@@ -1,0 +1,21 @@
+2022-12-07 14:15:33 error tj3d[839401]: feeder/feeder.tjp:129: Cannot open include file feeder/a.tji
+2022-12-08 15:40:40 error tj3d[1068834]: feeder/feeder1.tji:78: Date 2023-12-30-00:00-+0800 must be within the project time frame 2022-10-11-08:00-+0800  - 2023-10-11-08:00-+0800
+2022-12-08 15:42:13 error tj3d[1069136]: feeder/feeder1.tji:110: Task A100.F0 has already been defined.
+2022-12-08 15:42:34 error tj3d[1069248]: feeder/feeder1.tji:117: Task A100.F1.F102 has already been defined.
+2022-12-09 17:48:15 error tj3d[1306614]: envc3/envc3.tji:9: Unexpected token 'start' found. Expecting one of 'min', 'h', 'd', 'w', 'm', 'y'
+2022-12-09 17:54:53 error tj3d[1307991]: envc3/envc3.tjp:72: Sorting criterium expected (e.g. tree, start.up or plan.end.down).
+2022-12-15 12:41:35 error tj3d[2597100]: eartag/eartag.tji:10: Scenario plan: Task t1.t12 has unknown depends t11
+2022-12-15 12:43:43 error tj3d[2597501]: eartag/eartag.tji:10: Scenario plan: Task t1.t12 has unknown depends t11
+2022-12-15 12:46:26 error tj3d[2598056]: eartag/eartag.tji:10: Scenario plan: Task t1.t12 has unknown depends t11
+2022-12-15 12:46:36 error tj3d[2598122]: eartag/eartag.tji:10: Scenario plan: Task t1.t12 has unknown depends t11
+2022-12-15 12:49:01 error tj3d[2598528]: eartag/eartag.tji:15: Scenario plan: Task t1.t13 has unknown depends t12
+2022-12-15 12:51:32 error tj3d[2598988]: eartag/eartag.tji:10: Scenario plan: Task t1.t12 has unknown depends t11
+2022-12-15 12:51:51 error tj3d[2599093]: eartag/eartag.tji:28: Scenario plan: Task t2.t21 has unknown depends t14
+2022-12-15 12:54:28 error tj3d[2599553]: eartag/eartag.tji:56: Scenario plan: Task t3.t31 has unknown depends t3.t1.t14
+2022-12-15 12:57:01 error tj3d[2600189]: Cannot listen on port 8474: Address already in use - bind(2) for "127.0.0.1" port 8474
+2022-12-15 12:58:35 warning tj3d[1085115]: Report server (Project feeder report unknown) lost heartbeat from ProjectServer. Terminating.
+2022-12-15 12:58:53 warning tj3d[2138876]: Report server (Project feeder report unknown) lost heartbeat from ProjectServer. Terminating.
+2022-12-15 12:58:53 warning tj3d[1242003]: Report server (Project feeder report unknown) lost heartbeat from ProjectServer. Terminating.
+2022-12-15 13:01:23 error tj3d[2601527]: Cannot listen on port 8474: Address already in use - bind(2) for "127.0.0.1" port 8474
+2022-12-15 15:48:43 warning tj3d[25519]: Report server (Project eartag report unknown) lost heartbeat from ProjectServer. Terminating.
+2022-12-23 09:21:00 error tj3d[1750323]: hs/hs.tjp:129: Cannot open include file hs/envc.tji
