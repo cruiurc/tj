@@ -18,11 +18,11 @@ task total "龙山场改造任务" {
     task contoller "料线控制器改造" {
 
         task purchase "准备物料（线、箱、工具）" {
-            end 2022-01-10
+            end 2023-01-10
             duration 11d
         }
 
-        task purchase "施工" {
+        task work "施工" {
             depends !purchase
             duration 35d
         }
