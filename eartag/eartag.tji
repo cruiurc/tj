@@ -13,13 +13,24 @@ task t1 "选定供应商" {
     }
 
     task t13 "招标" {
+        journalentry 2022-12-28 "招标延期" {
+        alert yellow
+        summary -8<-
+          受疫情影响，招标推迟一周开展
+        ->8-
+        details -8<-
+          预计下周开展招标，然后根据招标选择的供应商更新采购计划
+        ->8-
+      }
         depends !t12
         duration 4d
+	complete 25
     }
 
     task t14 "签订合同" {
         duration 5d
         depends !t13
+	complete 0
     }
 }
 

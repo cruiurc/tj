@@ -19,3 +19,4 @@
 2022-12-15 13:01:23 error tj3d[2601527]: Cannot listen on port 8474: Address already in use - bind(2) for "127.0.0.1" port 8474
 2022-12-15 15:48:43 warning tj3d[25519]: Report server (Project eartag report unknown) lost heartbeat from ProjectServer. Terminating.
 2022-12-23 09:21:00 error tj3d[1750323]: hs/hs.tjp:129: Cannot open include file hs/envc.tji
+2022-12-28 15:02:58 warning tj3d[1161763]: Report server (Project prepare report unknown) lost heartbeat from ProjectServer. Terminating.

@@ -61,12 +61,12 @@ taskreport overview "" {
   header -8<-
     === 甘特图 ===
 
-    本项目是……   
+    本项目目标是完成耳标产品的试制，基于设计技术要求，通过招标采购，并依据工艺流程开展加工，直至完成产品验证和包装入库为止。
 
     === 计划基线 ===
   ->8-
   columns bsi { title 'WBS' },
-          name, start, end, chart { ${TaskTip} }
+          name, start, end, chart { ${TaskTip} scale day width 500}
   # For this report we like to have the abbreviated weekday in front
   # of the date. %a is the tag for this.
   timeformat "%a %Y-%m-%d"

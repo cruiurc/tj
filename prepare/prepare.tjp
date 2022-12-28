@@ -66,7 +66,7 @@ taskreport overview "" {
     === 基线 ===
   ->8-
   columns bsi { title 'WBS' },
-          name, start, end, chart { ${TaskTip} }
+          name, start, end, chart { ${TaskTip} scale day width 500}
   # For this report we like to have the abbreviated weekday in front
   # of the date. %a is the tag for this.
   timeformat "%a %Y-%m-%d"

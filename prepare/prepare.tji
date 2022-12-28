@@ -12,7 +12,7 @@ task prj "400套环控器准备" {
             }
 
             task tip "贴片" {
-                depends purchase
+                depends !purchase
                 duration 5d
             }
         }
@@ -23,7 +23,7 @@ task prj "400套环控器准备" {
         }
 
         task assemble "组装" {
-            depends pcba, box
+            depends !pcba, !box
         }
     }
 
@@ -40,7 +40,7 @@ task prj "400套环控器准备" {
         }
 
         task assemble "组装" {
-            depends box, component
+            depends !box, !component
             duration 10d
         }
     }
@@ -55,7 +55,7 @@ task prj "400套环控器准备" {
             }
 
             task tip "贴片" {
-                depends purchase
+                depends !purchase
                 duration 5d
             }
         }
@@ -66,7 +66,7 @@ task prj "400套环控器准备" {
         }
 
         task component "组装" {
-            depends pcba, box
+            depends !pcba, !box
             duration 5d
         }
     }
