@@ -1,0 +1,73 @@
+# FreeMind map "新建思维导图"
+
+task prj "400套环控器准备" {
+
+    task controller "环控器本体准备" {
+
+        task pcba "PCBA" {
+
+            task purchase "物料采购" {
+                start 2022-12-20
+                duration 11d
+            }
+
+            task tip "贴片" {
+                depends purchase
+                duration 5d
+            }
+        }
+
+        task box "外壳采购" {
+            start 2022-12-28
+            duration 7d
+        }
+
+        task assemble "组装" {
+            depends pcba, box
+        }
+    }
+
+    task box "配电箱准备" {
+
+        task box "箱体采购" {
+            start 2022-12-20
+            duration 10d
+        }
+
+        task component "低压元器件采购" {
+            start 2022-12-20
+            duration 10d
+        }
+
+        task assemble "组装" {
+            depends box, component
+            duration 10d
+        }
+    }
+
+    task sensor "传感器准备" {
+
+        task pcba "PCBA采购" {
+
+            task purchase "物料采购" {
+                start 2022-12-20
+                duration 11d
+            }
+
+            task tip "贴片" {
+                depends purchase
+                duration 5d
+            }
+        }
+
+        task box "外壳采购" {
+            start 2022-12-28
+            duration 7d
+        }
+
+        task component "组装" {
+            depends pcba, box
+            duration 5d
+        }
+    }
+}

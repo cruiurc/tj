@@ -1,0 +1,446 @@
+# FreeMind map "环控器项目"
+
+task RTSGI9000 "开发测试SGI9000" {
+
+    task hardwaredesign "硬件设计" {
+
+        task PRD "环控器硬件PRD编写" {
+            duration 0d
+            end 2022-08-01
+	    complete 100
+        }
+
+        task programme "核心器件与功能模块方案选型" {
+            duration 0d
+            end 2022-07-22
+        }
+
+        task PCBlayout "环控器1.0底板硬件原理图、PCB设计" {
+            duration 0d
+            end 2022-08-05
+        }
+
+        task hardware "7寸屏版主控硬件规划、设计" {
+            duration 0d
+            end 2022-09-23
+        }
+
+        task PCBlayout1 "7寸组态屏版PCB设计" {
+            duration 0d
+            end 2022-09-27
+        }
+
+        task design1 "PCB生产、物料采购、SMT对接" {
+            duration 0d
+            end 2022-09-30
+        }
+
+        task design2 "环控器标准版底板原理图设计" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task SMT1 "对接泰安项目主板PCB贴片生产" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task test "对接泰安项目主板功能测试" {
+            duration 0d
+            end 2022-10-25
+        }
+
+        task PCBlayout3 "环控器标准版底板Layout" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task programme1 "自研温湿度-光照-二氧化碳传感器硬件方案设计" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task PCBdesign "自研温湿度-光照-二氧化碳传感器硬件PCB设计" {
+            duration 0d
+            end 2022-11-04
+        }
+    }
+
+    task Structuraldesign "结构设计" {
+
+        task Design1 "环控器1.0外壳设计" {
+            duration 0d
+            end 2022-08-26
+        }
+
+        task Design2 "薄膜按键尺寸设计" {
+            duration 0d
+            end 2022-08-12
+        }
+
+        task Design3 "薄膜按键UI设计" {
+            duration 0d
+            end 2022-08-12
+        }
+
+        task PCBlayout "7寸屏版PCB外形图纸输出" {
+            duration 0d
+            end 2022-09-24
+        }
+
+        task Design4 "对接工业设计公司，洽谈环控器外壳工业设计" {
+            duration 0d
+            end 2022-10-14
+        }
+
+        task Validation "泰安项目公模结构件、安装辅材等验证、清点" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task purchase "确认工业设计供应商、走采购流程" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task Assemble "泰安项目环控器外壳处理、组装" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task PCBlayout2 "自研温湿度-光照-二氧化碳传感器PCB尺寸输出" {
+            duration 0d
+            end 2022-10-24
+        }
+
+        task purchase2 "完成工业设计合同申请流程" {
+            duration 0d
+            end 2022-11-04
+        }
+    }
+
+    task Embeddedsoftware "嵌入式软件设计" {
+
+        task Validation "BootLoader代码开发、flash分区、跳转验证" {
+            duration 0d
+            end 2022-08-11
+        }
+
+        task SYS "基于硬件处理器适配RT-Thread操作系统" {
+            duration 0d
+            end 2022-08-12
+        }
+
+        task BSP "BSP部分开发（串口、PWM、ADC、LCD、以太网、RTC、USB、CAN、spiflash等）" {
+            duration 0d
+            end 2022-08-31
+        }
+
+        task communication "中间件移植（文件系统、网络协议栈、FAL、pahomqtt、http、u8g2、libmodbus等）" {
+            duration 0d
+            end 2022-08-31
+        }
+
+        task Modbus1 "基于modbus开发传感器接入代码" {
+            duration 0d
+            end 2022-08-18
+        }
+
+        task drive "数字输入状态与指示灯状态驱动代码开发" {
+            duration 0d
+            end 2022-09-10
+        }
+
+        task UI "UI应用层跳转逻辑与显示界面开发" {
+            duration 0d
+            end 2022-09-10
+        }
+
+        task platform "云平台（华为IoTDA）数据交互开发" {
+            duration 0d
+            end 2022-08-26
+        }
+
+        task Algorithm "环控算法控制逻辑实现" {
+            duration 0d
+            end 2022-09-16
+        }
+
+        task data "数据存储、日志存储开发" {
+            duration 0d
+            end 2022-09-10
+        }
+
+        task Update "OTA远程与本地升级开发" {
+            duration 0d
+            end 2022-09-10
+        }
+
+        task Modbus2 "组态屏Modbus从机功能代码开发" {
+            duration 0d
+            end 2022-09-16
+        }
+
+        task LCG "LCD交互页面核心参数设置开发" {
+            duration 0d
+            end 2022-09-23
+        }
+
+        task UML "环控器1.0控制算法代码UML流程图输出" {
+            duration 0d
+            end 2022-09-23
+        }
+
+        task logic "完整控制逻辑实现（定频、变频、喷淋、水帘）" {
+            duration 0d
+            end 2022-09-30
+        }
+
+        task test1 "龙山厂环控器测试软件端测试用例准备" {
+            duration 0d
+            end 2022-10-01
+        }
+
+        task test2 "龙山厂环控器实测" {
+            duration 0d
+            end 2022-10-14
+        }
+
+        task purchase2 "优化环境控制代码逻辑" {
+            duration 0d
+            end 2022-10-14
+        }
+
+        task purchase3 "泰安站区技改环控物料准备、采购、跟进" {
+            duration 0d
+            end 2022-10-14
+        }
+
+        task optimas "华为物联网交互全功能优化" {
+            duration 0d
+            end 2022-10-14
+        }
+
+        task GUI1 "LCD12864 GUI部分基于实际需求调优" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task CSV "泰安项目分娩室环控最适环境csv表格构建" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task test3 "龙山场环控测试协助" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task Icloud "G2L平台huaweicloud-iot-device-sdk-c交叉编译、部署" {
+            duration 0d
+            end 2022-10-21
+        }
+
+        task bug1 "GUI功能测试、bug修复" {
+            duration 0d
+            end 2022-10-26
+        }
+
+        task BUG2 "控制逻辑功能测试、bug修复" {
+            duration 0d
+            end 2022-10-26
+        }
+
+        task MQTTS "基于G2L实现MQTTS接入华为IoTDA" {
+            duration 0d
+            end 2022-10-28
+        }
+
+        task Libmodbus "基于G2L实现libmodbus交叉编译和传感器采集" {
+            duration 0d
+            end 2022-10-28
+        }
+
+        task MQTTS2 "基于G2L实现MQTTS接入华为IoTDA" {
+            duration 0d
+            end 2022-10-28
+        }
+
+        task nginx "基于G2L实现nginx交叉编译" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task sqlite3 "基于G2L实现sqlite3交叉编译" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task BUG3 "泰安项目交付底板控制代码bug修复" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task QT1 "泰安项目环控华为IoTDA注册" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task web "配合前端实现web端登录鉴权功能" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task QT2 "QT端实现猪舍参数、系统参数等配置" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task QT3 "配合前端实现猪舍参数、系统参数等配置" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task API "前端实现基础环境参数接口调用与显示" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task Design4 "完成组态屏第一版UI设计" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task Design5 "第一版组态屏寄存器功能定义与配置" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task drive2 "环控标准版本键盘驱动开发" {
+            duration 0d
+            end 2022-11-11
+        }
+
+        task Design6 "组态软件界面开发" {
+            duration 0d
+            end 2022-11-18
+        }
+
+        task data2 "组态通讯协议制定、基本数据交互实现" {
+            duration 0d
+            end 2022-11-18
+        }
+    }
+
+    task Electrical "电气设计" {
+
+        task Design1 "标准型电控箱设计" {
+            duration 0d
+            end 2022-08-25
+        }
+
+        task Design2 "扩展卡测试与选型" {
+            duration 0d
+            end 2022-08-27
+        }
+
+        task Design3 "传感器测试" {
+            duration 0d
+            end 2022-08-19
+        }
+
+        task Design4 "测试模组面板设计" {
+            duration 0d
+            end 2022-08-21
+        }
+
+        task test1 "测试模板加工、接线、测试" {
+            duration 0d
+            end 2022-08-26
+        }
+
+        task Design5 "2代环控器串口屏组态画面设计" {
+            duration 0d
+            end 2022-09-15
+        }
+
+        task test2 "环控测试计划输出" {
+            duration 0d
+            end 2022-09-23
+        }
+
+        task Design6 "7寸屏版显示屏UE设计" {
+            duration 0d
+            end 2022-09-30
+        }
+
+        task Design7 "对接工业设计公司，洽谈HMI平面设计" {
+            duration 0d
+            end 2022-09-30
+        }
+
+        task Design8 "环控电气箱工艺、电气设计" {
+            duration 0d
+            end 2022-09-30
+        }
+
+        task Algorithm "环控标准版7寸屏第一版原型" {
+            duration 0d
+            end 2022-10-21
+        }
+    }
+
+    task Algorithm "算法设计" {
+
+        task logic "温湿度度控制、暖灯控制逻辑图" {
+            duration 0d
+            end 2022-08-17
+        }
+
+        task Algorithm "自研环控器算法文档输出" {
+            duration 0d
+            end 2022-08-19
+        }
+
+        task Algorithm2 "环控2.0逻辑算法参数整理" {
+            duration 0d
+            end 2022-11-04
+        }
+    }
+
+    task Systemtest "系统测试" {
+
+        task Test1 "环控龙山场功能细节测试" {
+            duration 0d
+            end 2022-10-28
+        }
+
+        task test2 "泰安交付整机功能性测试" {
+            duration 0d
+            end 2022-11-04
+        }
+
+        task test3 "泰安现场环控安装调试" {
+            duration 0d
+            end 2022-11-25
+        }
+    }
+
+    task Outsourcing "外协加工" {
+
+        task production "薄膜按键加工" {
+            duration 0d
+            end 2022-08-18
+        }
+
+        task PCB "PCB文件生产" {
+            duration 0d
+            end 2022-08-10
+        }
+
+        task SMT "PCB贴片" {
+            duration 0d
+            end 2022-08-19
+        }
+    }
+}
