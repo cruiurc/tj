@@ -1,0 +1,30 @@
+# FreeMind map "新建思维导图"
+
+task total "龙山场改造任务" {
+
+    task light "增加保温灯" {
+
+        task purchase "准备物料（灯和线缆）" {
+            end 2022-12-29
+            duration 7d
+        }
+
+        task work "布线施工" {
+            depends !purchase
+            duration 10d
+        }
+    }
+
+    task contoller "料线控制器改造" {
+
+        task purchase "准备物料（线、箱、工具）" {
+            end 2022-01-10
+            duration 11d
+        }
+
+        task purchase "施工" {
+            depends !purchase
+            duration 35d
+        }
+    }
+}
