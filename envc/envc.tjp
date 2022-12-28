@@ -1,4 +1,4 @@
-project envc "智能环控器产品开发" 2022-7-11 +12m {
+project envc "[关闭]智能环控器9200产品开发" 2022-7-11 +12m {
   timezone "Asia/Shanghai"
   timeformat "%Y-%m-%d"
   numberformat "-" "" "," "." 1
