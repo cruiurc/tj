@@ -20,3 +20,53 @@
 2022-12-15 15:48:43 warning tj3d[25519]: Report server (Project eartag report unknown) lost heartbeat from ProjectServer. Terminating.
 2022-12-23 09:21:00 error tj3d[1750323]: hs/hs.tjp:129: Cannot open include file hs/envc.tji
 2022-12-28 15:02:58 warning tj3d[1161763]: Report server (Project prepare report unknown) lost heartbeat from ProjectServer. Terminating.
+2022-12-29 02:05:39 fatal tj3d[1251158]: Connection reset by peer
+/usr/lib/ruby/2.7.0/drb/drb.rb:580:in `read'
+/usr/lib/ruby/2.7.0/drb/drb.rb:580:in `load'
+/usr/lib/ruby/2.7.0/drb/drb.rb:639:in `recv_reply'
+/usr/lib/ruby/2.7.0/drb/drb.rb:941:in `recv_reply'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1324:in `send_message'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1143:in `block (2 levels) in method_missing'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1302:in `open'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1142:in `block in method_missing'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1161:in `with_friend'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1141:in `method_missing'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1129:in `respond_to?'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/ProcessIntercom.rb:103:in `connect'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/ProcessIntercom.rb:56:in `block in connect'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/ProcessIntercom.rb:28:in `trap'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/ProcessIntercom.rb:56:in `connect'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1690:in `perform_without_block'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1646:in `perform'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1734:in `block (2 levels) in main_loop'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1730:in `loop'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1730:in `block in main_loop'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+*******************************************************************************
+
+2022-12-29 09:48:51 error tj3d[1345790]: Cannot listen on port 8474: Address already in use - bind(2) for "127.0.0.1" port 8474
+2022-12-29 09:50:06 error tj3d[1346323]: Project files must have a '.tjp' or '.tji' extension
+2022-12-29 09:50:24 fatal tj3d[1273]: SIGTERM
+/usr/lib/ruby/2.7.0/drb/drb.rb:1557:in `join'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1557:in `shutdown'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1529:in `stop_service'
+/usr/lib/ruby/2.7.0/drb/drb.rb:1805:in `stop_service'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/daemon/ProjectBroker.rb:126:in `start'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/apps/Tj3Daemon.rb:115:in `appMain'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/taskjuggler/Tj3AppBase.rb:160:in `main'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/lib/tj3d.rb:16:in `<top (required)>'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/usr/lib/ruby/vendor_ruby/rubygems/core_ext/kernel_require.rb:85:in `require'
+/var/lib/gems/2.7.0/gems/taskjuggler-3.7.1/bin/tj3d:4:in `<top (required)>'
+/usr/local/bin/tj3d:23:in `load'
+/usr/local/bin/tj3d:23:in `<main>'
+
+*******************************************************************************
+You have triggered a bug in TaskJuggler version 3.7.1!
+Please see the user manual on how to get this bug fixed!
+http://www.taskjuggler.org/tj3/manual/Reporting_Bugs.html#Reporting_Bugs_and_Feature_Requests
+*******************************************************************************
+
